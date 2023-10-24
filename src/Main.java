@@ -27,7 +27,8 @@ public class Main {
 
 
         cursoADM.getAlunos().stream()
-                .filter(a -> a.getMatricula().isPresent()).forEach(a -> System.out.println(a.getNome() + " - " + a.getMatricula().get().getNumero()));
+                .filter(a -> a.getMatricula().isPresent())
+                    .forEach(a -> System.out.println(a.getNome() + " - " + a.getMatricula().get().getNumero()));
 
     }
 }
